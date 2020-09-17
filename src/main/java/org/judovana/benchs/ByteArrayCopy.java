@@ -29,34 +29,50 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package org.judovana;
+package org.judovana.benchs;
+
+import org.judovana.impls.TestByteArrayCopy;
+import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.Setup;
+import org.openjdk.jmh.annotations.State;
+import org.openjdk.jmh.annotations.TearDown;
+
+@State(value= Scope.Benchmark)
+public class ByteArrayCopy {
+
+    TestByteArrayCopy.VariantRunner ByteArrayCopySelfRunner;
+    TestByteArrayCopy.VariantRunner ByteArrayCopyNewRunner;
+    Byte[] selfByteData;
+    Byte[] newByteData;
+    Byte[] selfByteRes;
+    Byte[] newByteRes;
 
 
-import org.judovana.benchs.ByteArrayCopy;
-import org.judovana.benchs.byteArrayCopy;
-import org.openjdk.jmh.runner.Runner;
-import org.openjdk.jmh.runner.RunnerException;
-import org.openjdk.jmh.runner.options.Options;
-import org.openjdk.jmh.runner.options.OptionsBuilder;
+    @Setup
+    public void initData() {
+        ByteArrayCopySelfRunner = new TestByteArrayCopy.SelfCopy();
+        ByteArrayCopyNewRunner = new TestByteArrayCopy.NewCopy();
+        selfByteData = TestByteArrayCopy.init();
+        newByteData = TestByteArrayCopy.init();
+    }
 
-public class CJMH {
-
-
-
-    public static void main(String[] args) throws RunnerException {
-        Options opt = new OptionsBuilder()
-                .include(byteArrayCopy.class.getSimpleName())
-                .include(ByteArrayCopy.class.getSimpleName())
-                .forks(1)
-                .warmupForks(1)
-                .warmupIterations(1)
-                .measurementIterations(1)
-                .build();
-
-        new Runner(opt).run();
+    @TearDown
+    public void verifyData() {
+        TestByteArrayCopy.verify(selfByteData);
+        TestByteArrayCopy.verify(newByteData);
     }
 
 
+    @Benchmark
+    public void ByteArrayCopySelf() {
+        selfByteRes = ByteArrayCopySelfRunner.run(selfByteData);
+    }
+
+    @Benchmark
+    public void ByteArrayCopyNew() {
+        newByteRes = ByteArrayCopyNewRunner.run(newByteData);
+    }
 
 
 }
