@@ -33,6 +33,7 @@ package org.judovana;
 
 
 import org.judovana.benchs.ByteArrayCopy;
+import org.judovana.benchs.ScannerRead;
 import org.judovana.benchs.byteArrayCopy;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
@@ -47,6 +48,7 @@ public class CJMH {
         Options opt = new OptionsBuilder()
                 .include(byteArrayCopy.class.getSimpleName())
                 .include(ByteArrayCopy.class.getSimpleName())
+                .include(ScannerRead.class.getSimpleName())
                 .forks(1)
                 .warmupForks(1)
                 .warmupIterations(1)
