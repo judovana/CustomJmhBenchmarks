@@ -1,0 +1,39 @@
+#!/bin/bash
+
+set -x
+set -e
+set -o pipefail
+
+## resolve folder of this script, following all symlinks,
+## http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
+SCRIPT_SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SCRIPT_SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+  SCRIPT_DIR="$( cd -P "$( dirname "$SCRIPT_SOURCE" )" && pwd )"
+  SCRIPT_SOURCE="$(readlink "$SCRIPT_SOURCE")"
+  # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+  [[ $SCRIPT_SOURCE != /* ]] && SCRIPT_SOURCE="$SCRIPT_DIR/$SCRIPT_SOURCE"
+done
+readonly SCRIPT_DIR="$( cd -P "$( dirname "$SCRIPT_SOURCE" )" && pwd )"
+
+#to allow differnt buildjdk and run jdk
+# build and run with same, set java home
+# build by system and run by custom set jre home
+# build by custom set java home and run by different set also jre home
+if [ "x$JRE_HOME" == "x" ] ; then 
+  if [ "x$JAVA_HOME" == "x" ] ; then 
+    JAVA=java
+  else
+    JAVA=$JAVA_HOME/bin/java
+  fi
+
+else
+  JAVA=$JRE_HOME/bin/java
+fi
+
+pushd $SCRIPT_DIR
+  mvn clean install
+popd
+
+OUT=CustomJmhBenchmarks.log
+$JAVA -jar $SCRIPT_DIR/target/benchmarks.jar $1 $2 $3 $4 $5 $6 $7 $8 $9 | tee $OUT
+$SCRIPT_DIR/src/main/resources/bash/toProperties.sh $OUT | tee CustomJmhBenchmarks.properties
