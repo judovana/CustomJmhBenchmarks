@@ -29,6 +29,12 @@ public class byteArrayCopy {
     public void verifyData() {
         TestbyteArrayCopy.verify(selfbyteData);
         TestbyteArrayCopy.verify(newbyteData);
+        byteArrayCopySelfRunner = null;
+        byteArrayCopyNewRunner = null;
+        selfbyteData = null;
+        newbyteData = null;
+        selfbyteRes = null;
+        newbyteRes = null;
     }
 
     @Benchmark
