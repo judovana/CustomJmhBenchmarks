@@ -30,10 +30,11 @@ else
   JAVA=$JRE_HOME/bin/java
 fi
 
-pushd $SCRIPT_DIR
-  mvn clean install
-popd
-
+if [ ! -e $SCRIPT_DIR/target/benchmarks.jar ] ; then
+  pushd $SCRIPT_DIR
+    mvn clean install
+  popd
+fi
 OUT=CustomJmhBenchmarks.log
 $JAVA -jar $SCRIPT_DIR/target/benchmarks.jar $1 $2 $3 $4 $5 $6 $7 $8 $9 | tee $OUT
 sh $SCRIPT_DIR/src/main/resources/bash/toProperties.sh $OUT | tee CustomJmhBenchmarks.properties
