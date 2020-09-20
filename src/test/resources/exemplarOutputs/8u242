@@ -1,0 +1,597 @@
+# JMH version: 1.25.2
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-1.fc32.x86_64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.judovana.benchs.ByteArrayCopy.ByteArrayCopyNew
+
+# Run progress: 0.00% complete, ETA 00:58:20
+# Fork: 1 of 5
+# Warmup Iteration   1: 509.892 ops/s
+# Warmup Iteration   2: 580.021 ops/s
+# Warmup Iteration   3: 528.742 ops/s
+# Warmup Iteration   4: 563.611 ops/s
+# Warmup Iteration   5: 610.455 ops/s
+Iteration   1: 556.163 ops/s
+Iteration   2: 497.095 ops/s
+Iteration   3: 576.987 ops/s
+Iteration   4: 544.285 ops/s
+Iteration   5: 582.970 ops/s
+
+# Run progress: 2.86% complete, ETA 00:56:59
+# Fork: 2 of 5
+# Warmup Iteration   1: 482.255 ops/s
+# Warmup Iteration   2: 607.802 ops/s
+# Warmup Iteration   3: 604.474 ops/s
+# Warmup Iteration   4: 620.022 ops/s
+# Warmup Iteration   5: 613.494 ops/s
+Iteration   1: 619.878 ops/s
+Iteration   2: 604.763 ops/s
+Iteration   3: 617.230 ops/s
+Iteration   4: 598.688 ops/s
+Iteration   5: 627.317 ops/s
+
+# Run progress: 5.71% complete, ETA 00:55:17
+# Fork: 3 of 5
+# Warmup Iteration   1: 512.321 ops/s
+# Warmup Iteration   2: 599.516 ops/s
+# Warmup Iteration   3: 603.984 ops/s
+# Warmup Iteration   4: 591.517 ops/s
+# Warmup Iteration   5: 608.741 ops/s
+Iteration   1: 578.571 ops/s
+Iteration   2: 608.005 ops/s
+Iteration   3: 604.967 ops/s
+Iteration   4: 616.787 ops/s
+Iteration   5: 608.896 ops/s
+
+# Run progress: 8.57% complete, ETA 00:53:36
+# Fork: 4 of 5
+# Warmup Iteration   1: 504.599 ops/s
+# Warmup Iteration   2: 590.318 ops/s
+# Warmup Iteration   3: 593.365 ops/s
+# Warmup Iteration   4: 598.608 ops/s
+# Warmup Iteration   5: 610.703 ops/s
+Iteration   1: 584.107 ops/s
+Iteration   2: 581.428 ops/s
+Iteration   3: 559.064 ops/s
+Iteration   4: 547.327 ops/s
+Iteration   5: 586.655 ops/s
+
+# Run progress: 11.43% complete, ETA 00:51:56
+# Fork: 5 of 5
+# Warmup Iteration   1: 472.994 ops/s
+# Warmup Iteration   2: 586.149 ops/s
+# Warmup Iteration   3: 593.521 ops/s
+# Warmup Iteration   4: 582.642 ops/s
+# Warmup Iteration   5: 588.437 ops/s
+Iteration   1: 604.418 ops/s
+Iteration   2: 599.019 ops/s
+Iteration   3: 597.543 ops/s
+Iteration   4: 595.189 ops/s
+Iteration   5: 535.175 ops/s
+
+
+Result "org.judovana.benchs.ByteArrayCopy.ByteArrayCopyNew":
+  585.301 ±(99.9%) 23.130 ops/s [Average]
+  (min, avg, max) = (497.095, 585.301, 627.317), stdev = 30.878
+  CI (99.9%): [562.171, 608.431] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-1.fc32.x86_64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.judovana.benchs.ByteArrayCopy.ByteArrayCopySelf
+
+# Run progress: 14.29% complete, ETA 00:50:15
+# Fork: 1 of 5
+# Warmup Iteration   1: 523.949 ops/s
+# Warmup Iteration   2: 610.027 ops/s
+# Warmup Iteration   3: 601.643 ops/s
+# Warmup Iteration   4: 567.933 ops/s
+# Warmup Iteration   5: 592.813 ops/s
+Iteration   1: 609.742 ops/s
+Iteration   2: 618.823 ops/s
+Iteration   3: 611.764 ops/s
+Iteration   4: 622.667 ops/s
+Iteration   5: 614.575 ops/s
+
+# Run progress: 17.14% complete, ETA 00:48:35
+# Fork: 2 of 5
+# Warmup Iteration   1: 557.523 ops/s
+# Warmup Iteration   2: 622.483 ops/s
+# Warmup Iteration   3: 624.288 ops/s
+# Warmup Iteration   4: 623.720 ops/s
+# Warmup Iteration   5: 622.664 ops/s
+Iteration   1: 625.522 ops/s
+Iteration   2: 625.133 ops/s
+Iteration   3: 625.740 ops/s
+Iteration   4: 624.565 ops/s
+Iteration   5: 624.469 ops/s
+
+# Run progress: 20.00% complete, ETA 00:46:54
+# Fork: 3 of 5
+# Warmup Iteration   1: 556.223 ops/s
+# Warmup Iteration   2: 621.540 ops/s
+# Warmup Iteration   3: 619.390 ops/s
+# Warmup Iteration   4: 620.123 ops/s
+# Warmup Iteration   5: 621.610 ops/s
+Iteration   1: 619.990 ops/s
+Iteration   2: 621.088 ops/s
+Iteration   3: 621.071 ops/s
+Iteration   4: 620.902 ops/s
+Iteration   5: 620.156 ops/s
+
+# Run progress: 22.86% complete, ETA 00:45:14
+# Fork: 4 of 5
+# Warmup Iteration   1: 554.419 ops/s
+# Warmup Iteration   2: 620.574 ops/s
+# Warmup Iteration   3: 620.644 ops/s
+# Warmup Iteration   4: 609.206 ops/s
+# Warmup Iteration   5: 620.740 ops/s
+Iteration   1: 617.612 ops/s
+Iteration   2: 620.601 ops/s
+Iteration   3: 620.511 ops/s
+Iteration   4: 622.336 ops/s
+Iteration   5: 618.054 ops/s
+
+# Run progress: 25.71% complete, ETA 00:43:33
+# Fork: 5 of 5
+# Warmup Iteration   1: 560.598 ops/s
+# Warmup Iteration   2: 626.476 ops/s
+# Warmup Iteration   3: 627.103 ops/s
+# Warmup Iteration   4: 625.684 ops/s
+# Warmup Iteration   5: 628.135 ops/s
+Iteration   1: 627.907 ops/s
+Iteration   2: 627.383 ops/s
+Iteration   3: 627.611 ops/s
+Iteration   4: 627.648 ops/s
+Iteration   5: 625.180 ops/s
+
+
+Result "org.judovana.benchs.ByteArrayCopy.ByteArrayCopySelf":
+  621.642 ±(99.9%) 3.596 ops/s [Average]
+  (min, avg, max) = (609.742, 621.642, 627.907), stdev = 4.801
+  CI (99.9%): [618.046, 625.238] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-1.fc32.x86_64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.judovana.benchs.ScannerRead.longInputs
+
+# Run progress: 28.57% complete, ETA 00:41:52
+# Fork: 1 of 5
+# Warmup Iteration   1: 26742.884 ops/s
+# Warmup Iteration   2: 42542.715 ops/s
+# Warmup Iteration   3: 42536.309 ops/s
+# Warmup Iteration   4: 42565.361 ops/s
+# Warmup Iteration   5: 42557.321 ops/s
+Iteration   1: 42484.326 ops/s
+Iteration   2: 42418.263 ops/s
+Iteration   3: 42420.316 ops/s
+Iteration   4: 42317.200 ops/s
+Iteration   5: 42291.302 ops/s
+
+# Run progress: 31.43% complete, ETA 00:40:13
+# Fork: 2 of 5
+# Warmup Iteration   1: 26813.553 ops/s
+# Warmup Iteration   2: 42229.918 ops/s
+# Warmup Iteration   3: 42536.562 ops/s
+# Warmup Iteration   4: 42462.134 ops/s
+# Warmup Iteration   5: 42570.660 ops/s
+Iteration   1: 42536.726 ops/s
+Iteration   2: 42461.893 ops/s
+Iteration   3: 42455.088 ops/s
+Iteration   4: 42585.467 ops/s
+Iteration   5: 42349.599 ops/s
+
+# Run progress: 34.29% complete, ETA 00:38:34
+# Fork: 3 of 5
+# Warmup Iteration   1: 26840.211 ops/s
+# Warmup Iteration   2: 42708.281 ops/s
+# Warmup Iteration   3: 42801.113 ops/s
+# Warmup Iteration   4: 42718.034 ops/s
+# Warmup Iteration   5: 42539.635 ops/s
+Iteration   1: 42641.896 ops/s
+Iteration   2: 42739.168 ops/s
+Iteration   3: 42695.327 ops/s
+Iteration   4: 42633.832 ops/s
+Iteration   5: 42680.805 ops/s
+
+# Run progress: 37.14% complete, ETA 00:36:55
+# Fork: 4 of 5
+# Warmup Iteration   1: 26401.590 ops/s
+# Warmup Iteration   2: 41986.800 ops/s
+# Warmup Iteration   3: 41980.513 ops/s
+# Warmup Iteration   4: 42171.217 ops/s
+# Warmup Iteration   5: 42237.596 ops/s
+Iteration   1: 42003.268 ops/s
+Iteration   2: 41717.322 ops/s
+Iteration   3: 42014.603 ops/s
+Iteration   4: 42037.070 ops/s
+Iteration   5: 42056.936 ops/s
+
+# Run progress: 40.00% complete, ETA 00:35:15
+# Fork: 5 of 5
+# Warmup Iteration   1: 26645.653 ops/s
+# Warmup Iteration   2: 41866.746 ops/s
+# Warmup Iteration   3: 42099.095 ops/s
+# Warmup Iteration   4: 41986.072 ops/s
+# Warmup Iteration   5: 42004.831 ops/s
+Iteration   1: 41612.968 ops/s
+Iteration   2: 41951.064 ops/s
+Iteration   3: 42110.723 ops/s
+Iteration   4: 41997.641 ops/s
+Iteration   5: 42067.840 ops/s
+
+
+Result "org.judovana.benchs.ScannerRead.longInputs":
+  42291.226 ±(99.9%) 236.177 ops/s [Average]
+  (min, avg, max) = (41612.968, 42291.226, 42739.168), stdev = 315.290
+  CI (99.9%): [42055.049, 42527.403] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-1.fc32.x86_64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.judovana.benchs.ScannerRead.mediumInputs
+
+# Run progress: 42.86% complete, ETA 00:33:35
+# Fork: 1 of 5
+# Warmup Iteration   1: 4960.954 ops/s
+# Warmup Iteration   2: 7654.726 ops/s
+# Warmup Iteration   3: 7651.938 ops/s
+# Warmup Iteration   4: 7682.743 ops/s
+# Warmup Iteration   5: 7655.526 ops/s
+Iteration   1: 7647.789 ops/s
+Iteration   2: 7651.134 ops/s
+Iteration   3: 7654.507 ops/s
+Iteration   4: 7651.508 ops/s
+Iteration   5: 7676.590 ops/s
+
+# Run progress: 45.71% complete, ETA 00:31:55
+# Fork: 2 of 5
+# Warmup Iteration   1: 4960.849 ops/s
+# Warmup Iteration   2: 7740.689 ops/s
+# Warmup Iteration   3: 7698.855 ops/s
+# Warmup Iteration   4: 7704.379 ops/s
+# Warmup Iteration   5: 7697.159 ops/s
+Iteration   1: 7686.494 ops/s
+Iteration   2: 7709.750 ops/s
+Iteration   3: 7702.979 ops/s
+Iteration   4: 7680.261 ops/s
+Iteration   5: 7663.510 ops/s
+
+# Run progress: 48.57% complete, ETA 00:30:15
+# Fork: 3 of 5
+# Warmup Iteration   1: 4768.867 ops/s
+# Warmup Iteration   2: 7755.396 ops/s
+# Warmup Iteration   3: 7749.917 ops/s
+# Warmup Iteration   4: 7787.635 ops/s
+# Warmup Iteration   5: 7784.110 ops/s
+Iteration   1: 7798.376 ops/s
+Iteration   2: 7795.720 ops/s
+Iteration   3: 7794.557 ops/s
+Iteration   4: 7780.606 ops/s
+Iteration   5: 7787.679 ops/s
+
+# Run progress: 51.43% complete, ETA 00:28:34
+# Fork: 4 of 5
+# Warmup Iteration   1: 5044.096 ops/s
+# Warmup Iteration   2: 7737.159 ops/s
+# Warmup Iteration   3: 7807.491 ops/s
+# Warmup Iteration   4: 7824.969 ops/s
+# Warmup Iteration   5: 7803.005 ops/s
+Iteration   1: 7736.410 ops/s
+Iteration   2: 7801.337 ops/s
+Iteration   3: 7809.700 ops/s
+Iteration   4: 7807.259 ops/s
+Iteration   5: 7788.726 ops/s
+
+# Run progress: 54.29% complete, ETA 00:26:54
+# Fork: 5 of 5
+# Warmup Iteration   1: 4985.387 ops/s
+# Warmup Iteration   2: 7757.130 ops/s
+# Warmup Iteration   3: 7767.362 ops/s
+# Warmup Iteration   4: 7706.101 ops/s
+# Warmup Iteration   5: 7697.791 ops/s
+Iteration   1: 7701.111 ops/s
+Iteration   2: 7684.776 ops/s
+Iteration   3: 7711.036 ops/s
+Iteration   4: 7715.613 ops/s
+Iteration   5: 7727.597 ops/s
+
+
+Result "org.judovana.benchs.ScannerRead.mediumInputs":
+  7726.601 ±(99.9%) 43.446 ops/s [Average]
+  (min, avg, max) = (7647.789, 7726.601, 7809.700), stdev = 57.999
+  CI (99.9%): [7683.155, 7770.047] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-1.fc32.x86_64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.judovana.benchs.ScannerRead.smallInputs
+
+# Run progress: 57.14% complete, ETA 00:25:13
+# Fork: 1 of 5
+# Warmup Iteration   1: 1058.813 ops/s
+# Warmup Iteration   2: 1654.053 ops/s
+# Warmup Iteration   3: 1641.765 ops/s
+# Warmup Iteration   4: 1645.120 ops/s
+# Warmup Iteration   5: 1649.852 ops/s
+Iteration   1: 1631.944 ops/s
+Iteration   2: 1655.413 ops/s
+Iteration   3: 1647.915 ops/s
+Iteration   4: 1633.220 ops/s
+Iteration   5: 1648.082 ops/s
+
+# Run progress: 60.00% complete, ETA 00:23:33
+# Fork: 2 of 5
+# Warmup Iteration   1: 1069.430 ops/s
+# Warmup Iteration   2: 1639.644 ops/s
+# Warmup Iteration   3: 1639.487 ops/s
+# Warmup Iteration   4: 1642.965 ops/s
+# Warmup Iteration   5: 1628.756 ops/s
+Iteration   1: 1645.881 ops/s
+Iteration   2: 1648.062 ops/s
+Iteration   3: 1640.490 ops/s
+Iteration   4: 1636.561 ops/s
+Iteration   5: 1637.093 ops/s
+
+# Run progress: 62.86% complete, ETA 00:21:52
+# Fork: 3 of 5
+# Warmup Iteration   1: 1058.999 ops/s
+# Warmup Iteration   2: 1642.999 ops/s
+# Warmup Iteration   3: 1642.629 ops/s
+# Warmup Iteration   4: 1644.487 ops/s
+# Warmup Iteration   5: 1644.529 ops/s
+Iteration   1: 1642.216 ops/s
+Iteration   2: 1634.135 ops/s
+Iteration   3: 1650.786 ops/s
+Iteration   4: 1650.830 ops/s
+Iteration   5: 1640.990 ops/s
+
+# Run progress: 65.71% complete, ETA 00:20:11
+# Fork: 4 of 5
+# Warmup Iteration   1: 1062.048 ops/s
+# Warmup Iteration   2: 1633.220 ops/s
+# Warmup Iteration   3: 1629.512 ops/s
+# Warmup Iteration   4: 1633.578 ops/s
+# Warmup Iteration   5: 1633.247 ops/s
+Iteration   1: 1618.917 ops/s
+Iteration   2: 1630.647 ops/s
+Iteration   3: 1628.360 ops/s
+Iteration   4: 1617.607 ops/s
+Iteration   5: 1657.512 ops/s
+
+# Run progress: 68.57% complete, ETA 00:18:30
+# Fork: 5 of 5
+# Warmup Iteration   1: 1082.606 ops/s
+# Warmup Iteration   2: 1647.829 ops/s
+# Warmup Iteration   3: 1667.883 ops/s
+# Warmup Iteration   4: 1670.944 ops/s
+# Warmup Iteration   5: 1673.767 ops/s
+Iteration   1: 1689.709 ops/s
+Iteration   2: 1681.167 ops/s
+Iteration   3: 1633.931 ops/s
+Iteration   4: 1665.917 ops/s
+Iteration   5: 1670.357 ops/s
+
+
+Result "org.judovana.benchs.ScannerRead.smallInputs":
+  1645.510 ±(99.9%) 13.138 ops/s [Average]
+  (min, avg, max) = (1617.607, 1645.510, 1689.709), stdev = 17.539
+  CI (99.9%): [1632.371, 1658.648] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-1.fc32.x86_64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.judovana.benchs.byteArrayCopy.byteArrayCopyNew
+
+# Run progress: 71.43% complete, ETA 00:16:49
+# Fork: 1 of 5
+# Warmup Iteration   1: 4940.119 ops/s
+# Warmup Iteration   2: 5768.633 ops/s
+# Warmup Iteration   3: 5842.428 ops/s
+# Warmup Iteration   4: 5755.270 ops/s
+# Warmup Iteration   5: 5857.009 ops/s
+Iteration   1: 5863.332 ops/s
+Iteration   2: 5856.500 ops/s
+Iteration   3: 5851.706 ops/s
+Iteration   4: 5837.321 ops/s
+Iteration   5: 5828.891 ops/s
+
+# Run progress: 74.29% complete, ETA 00:15:08
+# Fork: 2 of 5
+# Warmup Iteration   1: 4943.300 ops/s
+# Warmup Iteration   2: 5779.263 ops/s
+# Warmup Iteration   3: 5798.925 ops/s
+# Warmup Iteration   4: 5848.094 ops/s
+# Warmup Iteration   5: 5828.231 ops/s
+Iteration   1: 5843.500 ops/s
+Iteration   2: 5845.268 ops/s
+Iteration   3: 5841.729 ops/s
+Iteration   4: 5814.167 ops/s
+Iteration   5: 5831.463 ops/s
+
+# Run progress: 77.14% complete, ETA 00:13:27
+# Fork: 3 of 5
+# Warmup Iteration   1: 4945.594 ops/s
+# Warmup Iteration   2: 5765.112 ops/s
+# Warmup Iteration   3: 5842.615 ops/s
+# Warmup Iteration   4: 5818.022 ops/s
+# Warmup Iteration   5: 5780.885 ops/s
+Iteration   1: 5844.893 ops/s
+Iteration   2: 5847.536 ops/s
+Iteration   3: 5806.608 ops/s
+Iteration   4: 5819.616 ops/s
+Iteration   5: 5821.926 ops/s
+
+# Run progress: 80.00% complete, ETA 00:11:46
+# Fork: 4 of 5
+# Warmup Iteration   1: 4920.101 ops/s
+# Warmup Iteration   2: 5764.564 ops/s
+# Warmup Iteration   3: 5796.707 ops/s
+# Warmup Iteration   4: 5849.925 ops/s
+# Warmup Iteration   5: 5825.700 ops/s
+Iteration   1: 5850.871 ops/s
+Iteration   2: 5822.412 ops/s
+Iteration   3: 5860.165 ops/s
+Iteration   4: 5851.028 ops/s
+Iteration   5: 5835.868 ops/s
+
+# Run progress: 82.86% complete, ETA 00:10:05
+# Fork: 5 of 5
+# Warmup Iteration   1: 4939.016 ops/s
+# Warmup Iteration   2: 5842.018 ops/s
+# Warmup Iteration   3: 5837.671 ops/s
+# Warmup Iteration   4: 5845.615 ops/s
+# Warmup Iteration   5: 5799.576 ops/s
+Iteration   1: 5837.472 ops/s
+Iteration   2: 5834.342 ops/s
+Iteration   3: 5838.468 ops/s
+Iteration   4: 5843.385 ops/s
+Iteration   5: 5852.348 ops/s
+
+
+Result "org.judovana.benchs.byteArrayCopy.byteArrayCopyNew":
+  5839.233 ±(99.9%) 10.778 ops/s [Average]
+  (min, avg, max) = (5806.608, 5839.233, 5863.332), stdev = 14.388
+  CI (99.9%): [5828.455, 5850.010] (assumes normal distribution)
+
+
+# JMH version: 1.25.2
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-1.fc32.x86_64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.judovana.benchs.byteArrayCopy.byteArrayCopySelf
+
+# Run progress: 85.71% complete, ETA 00:08:24
+# Fork: 1 of 5
+# Warmup Iteration   1: 4908.494 ops/s
+# Warmup Iteration   2: 5839.579 ops/s
+# Warmup Iteration   3: 5857.106 ops/s
+# Warmup Iteration   4: 5809.915 ops/s
+# Warmup Iteration   5: 5833.850 ops/s
+Iteration   1: 5836.805 ops/s
+Iteration   2: 5817.056 ops/s
+Iteration   3: 5833.454 ops/s
+Iteration   4: 5844.571 ops/s
+Iteration   5: 5852.118 ops/s
+
+# Run progress: 88.57% complete, ETA 00:06:43
+# Fork: 2 of 5
+# Warmup Iteration   1: 4937.163 ops/s
+# Warmup Iteration   2: 5849.051 ops/s
+# Warmup Iteration   3: 5792.624 ops/s
+# Warmup Iteration   4: 5829.625 ops/s
+# Warmup Iteration   5: 5849.615 ops/s
+Iteration   1: 5817.042 ops/s
+Iteration   2: 5862.269 ops/s
+Iteration   3: 5846.147 ops/s
+Iteration   4: 5869.025 ops/s
+Iteration   5: 5803.819 ops/s
+
+# Run progress: 91.43% complete, ETA 00:05:02
+# Fork: 3 of 5
+# Warmup Iteration   1: 4942.834 ops/s
+# Warmup Iteration   2: 5841.246 ops/s
+# Warmup Iteration   3: 5813.868 ops/s
+# Warmup Iteration   4: 5812.591 ops/s
+# Warmup Iteration   5: 5843.179 ops/s
+Iteration   1: 5770.669 ops/s
+Iteration   2: 5844.576 ops/s
+Iteration   3: 5849.174 ops/s
+Iteration   4: 5847.906 ops/s
+Iteration   5: 5849.548 ops/s
+
+# Run progress: 94.29% complete, ETA 00:03:21
+# Fork: 4 of 5
+# Warmup Iteration   1: 4917.688 ops/s
+# Warmup Iteration   2: 5825.120 ops/s
+# Warmup Iteration   3: 5848.950 ops/s
+# Warmup Iteration   4: 5861.214 ops/s
+# Warmup Iteration   5: 5865.492 ops/s
+Iteration   1: 5848.498 ops/s
+Iteration   2: 5858.084 ops/s
+Iteration   3: 5794.823 ops/s
+Iteration   4: 5847.334 ops/s
+Iteration   5: 5837.807 ops/s
+
+# Run progress: 97.14% complete, ETA 00:01:40
+# Fork: 5 of 5
+# Warmup Iteration   1: 4919.614 ops/s
+# Warmup Iteration   2: 5823.815 ops/s
+# Warmup Iteration   3: 5843.051 ops/s
+# Warmup Iteration   4: 5800.853 ops/s
+# Warmup Iteration   5: 5834.032 ops/s
+Iteration   1: 5826.674 ops/s
+Iteration   2: 5828.928 ops/s
+Iteration   3: 5784.248 ops/s
+Iteration   4: 5833.624 ops/s
+Iteration   5: 5811.262 ops/s
+
+
+Result "org.judovana.benchs.byteArrayCopy.byteArrayCopySelf":
+  5832.618 ±(99.9%) 18.372 ops/s [Average]
+  (min, avg, max) = (5770.669, 5832.618, 5869.025), stdev = 24.526
+  CI (99.9%): [5814.246, 5850.990] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:58:49
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                         Mode  Cnt      Score     Error  Units
+ByteArrayCopy.ByteArrayCopyNew   thrpt   25    585.301 ±  23.130  ops/s
+ByteArrayCopy.ByteArrayCopySelf  thrpt   25    621.642 ±   3.596  ops/s
+ScannerRead.longInputs           thrpt   25  42291.226 ± 236.177  ops/s
+ScannerRead.mediumInputs         thrpt   25   7726.601 ±  43.446  ops/s
+ScannerRead.smallInputs          thrpt   25   1645.510 ±  13.138  ops/s
+byteArrayCopy.byteArrayCopyNew   thrpt   25   5839.233 ±  10.778  ops/s
+byteArrayCopy.byteArrayCopySelf  thrpt   25   5832.618 ±  18.372  ops/s

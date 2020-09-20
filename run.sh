@@ -36,4 +36,4 @@ popd
 
 OUT=CustomJmhBenchmarks.log
 $JAVA -jar $SCRIPT_DIR/target/benchmarks.jar $1 $2 $3 $4 $5 $6 $7 $8 $9 | tee $OUT
-$SCRIPT_DIR/src/main/resources/bash/toProperties.sh $OUT | tee CustomJmhBenchmarks.properties
+sh $SCRIPT_DIR/src/main/resources/bash/toProperties.sh $OUT | tee CustomJmhBenchmarks.properties
