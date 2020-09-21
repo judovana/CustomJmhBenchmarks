@@ -32,6 +32,7 @@ fi
 
 if [ ! -e $SCRIPT_DIR/target/benchmarks.jar ] ; then
   pushd $SCRIPT_DIR
+    # maven usually follows java home
     mvn clean install
   popd
 fi
