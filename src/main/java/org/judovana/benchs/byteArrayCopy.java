@@ -10,8 +10,8 @@ import org.openjdk.jmh.annotations.TearDown;
 @State(value= Scope.Benchmark)
 public class byteArrayCopy {
 
-    TestbyteArrayCopy.VariantRunner byteArrayCopySelfRunner;
-    TestbyteArrayCopy.VariantRunner byteArrayCopyNewRunner;
+    TestbyteArrayCopy.SelfCopy byteArrayCopySelfRunner;
+    TestbyteArrayCopy.NewCopy byteArrayCopyNewRunner;
     byte[] selfbyteData;
     byte[] newbyteData;
     byte[] selfbyteRes;
