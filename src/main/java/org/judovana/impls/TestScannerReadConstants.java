@@ -1,6 +1,5 @@
 package org.judovana.impls;
 
-import static org.judovana.impls.TestScannerReadConstants.FILE_SIZES;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
