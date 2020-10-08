@@ -36,6 +36,15 @@ if [ ! -e $SCRIPT_DIR/target/benchmarks.jar ] ; then
     mvn clean install
   popd
 fi
-OUT=CustomJmhBenchmarks.log
-$JAVA -jar $SCRIPT_DIR/target/benchmarks.jar $1 $2 $3 $4 $5 $6 $7 $8 $9 | tee $OUT
-sh $SCRIPT_DIR/src/main/resources/bash/toProperties.sh $OUT | tee CustomJmhBenchmarks.properties
+
+for preffix in Throughput AverageTime ; do
+  if [ "x$preffix" = "xAverageTime" ] ;  then
+   unit="-tu us"
+  else
+   unit=
+  fi
+  OUT=CustomJmhBenchmarks-$preffix.log
+  $JAVA -jar $SCRIPT_DIR/target/benchmarks.jar -bm $preffix $unit | tee $OUT
+  sh $SCRIPT_DIR/src/main/resources/bash/toProperties.sh $OUT "$preffix." | tee CustomJmhBenchmarks-$preffix.properties
+done
+
